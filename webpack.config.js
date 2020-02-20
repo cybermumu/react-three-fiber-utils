@@ -26,7 +26,10 @@ module.exports = {
     })
   ],
   resolve: {
-    extensions: [".js", ".jsx"]
+    extensions: [".js", ".jsx"],
+    alias: {
+      "react-three-fiber-utils": path.resolve(__dirname, "src/lib/index.js")
+    }
   },
   devServer: {
     contentBase: path.join(__dirname, "docs"),
